@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 
 const skills = {
-  'Languages': ['JavaScript/TypeScript', 'Python','C++'],
+  'Languages': ['JavaScript/TypeScript', 'Python','C++','Java'],
   'Frontend': ['React', 'Next.js', 'Tailwind CSS'],
   'Backend': ['Node.js', 'Spring'],
   'Tools': ['Git', 'Docker','Scikit-learn','NLTK','Pandas','NumPy'],
