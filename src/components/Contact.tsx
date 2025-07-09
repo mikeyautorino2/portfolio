@@ -13,10 +13,7 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="text-4xl font-bold text-primary mb-4">Get in Touch</h2>
-          <p className="text-xl text-secondary mb-12">
-            Let&apos;s discuss how we can work together
-          </p>
+          <h2 className="text-4xl font-bold text-primary mb-4">Contact</h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <motion.a
               whileHover={{ scale: 1.05 }}

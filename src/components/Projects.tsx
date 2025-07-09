@@ -6,7 +6,7 @@ const projects = [
 	{
 		title: 'Personal Portfolio Website',
 		description:
-			'A modern, responsive portfolio website showcasing my projects and skills with smooth animations and a clean design',
+			'A modern, responsive portfolio website showcasing my projects and skills with smooth animations and a clean design.',
 		tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
 		image: '/projectonepreview.png',
 		github: 'https://github.com/mikeyautorino2/portfolio'
@@ -47,9 +47,6 @@ export default function Projects() {
 					<h2 className="text-4xl font-bold text-primary mb-4">
 						Featured Projects
 					</h2>
-					<p className="text-xl text-secondary">
-						Some of my recent work
-					</p>
 				</motion.div>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{projects.map((project, index) => (
