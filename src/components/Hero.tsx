@@ -11,7 +11,7 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
       >
         <motion.h1 
-          className="text-6xl sm:text-7xl lg:text-8xl font-bold text-primary mb-8 cursor-pointer hover:text-accent transition-colors duration-300"
+          className="inline-block text-6xl sm:text-7xl lg:text-8xl font-bold text-black mb-8 cursor-pointer hover:text-accent transition-colors duration-300 bg-white px-12 py-4 rounded-full shadow-md"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -34,7 +34,7 @@ export default function Hero() {
         >
           <a 
             href="#projects" 
-            className="inline-block bg-primary text-white px-10 py-5 text-xl font-medium rounded-lg hover:bg-accent transition-all duration-300 transform hover:scale-105"
+            className="inline-block bg-white text-black px-10 py-5 text-xl font-medium rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-md"
           >
             View My Work
           </a>
