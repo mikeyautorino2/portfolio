@@ -15,7 +15,7 @@ export default function Contact() {
         >
           <h2 className="text-4xl font-bold text-primary mb-4">Get in Touch</h2>
           <p className="text-xl text-secondary mb-12">
-            Let's discuss how we can work together
+            Let&apos;s discuss how we can work together
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <motion.a
