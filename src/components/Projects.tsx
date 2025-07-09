@@ -9,39 +9,33 @@ const projects = [
 			'A modern, responsive portfolio website showcasing my projects and skills with smooth animations and a clean design',
 		tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
 		image: '/projectonepreview.png',
+		github: 'https://github.com/mikeyautorino2/portfolio'
 	},
 	{
-		 title: 'NBA Player Valuation Model',
-  description: 'Scraped NBA stats from multiple sources, evaluated player contributions using Lasso regression and clustering, and visualized insights.',
-  tech: [
-    'Python',
-    'BeautifulSoup',
-    'scikit-learn',
-    'matplotlib',
-    'seaborn'
-  ],
-    image: '/nba_player_valuation_model.png',
+		title: 'NBA Player Valuation Model',
+		description: 'Scraped NBA stats from multiple sources, evaluated player contributions using Lasso regression and clustering, and visualized insights.',
+		tech: [
+			'Python',
+			'BeautifulSoup',
+			'scikit-learn',
+			'matplotlib',
+			'seaborn'
+		],
+		image: '/nba_player_valuation_model.png',
+		github: 'https://github.com/mikeyautorino2/NBAVORPMODEL'
 	},
 	{
-	title: 'Fraud Call Detection',
-  description: 'Used NLTK and bag-of-words to vectorize call transcripts and built a logistic regression pipeline with scikit-learn, achieving 89% accuracy in detecting fraud.',
-  tech: ['Python', 'NLTK', 'scikit-learn', 'pandas', 'NumPy'],
-  image: '/fraud-call-detection.jpg'
-	},
-	{
-		title: 'Project Three',
-		description: 'Mobile-first e-commerce platform',
-		tech: ['React Native', 'GraphQL', 'AWS'],
-		image: '/project3.jpg',
+		title: 'Fraud Call Detection Model',
+		description: 'Used NLTK and bag-of-words to vectorize call transcripts and built a logistic regression pipeline with scikit-learn, achieving 89% accuracy in detecting fraud.',
+		tech: ['Python', 'NLTK', 'scikit-learn', 'pandas', 'NumPy'],
+		image: '/fraud-call-detection.jpg',
+		github: 'https://github.com/mikeyautorino2/portfolio'
 	},
 ];
 
 export default function Projects() {
 	return (
-		<section
-			id="projects"
-			className="py-20 px-4 sm:px-6 lg:px-8 bg-background"
-		>
+		<section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
 			<div className="max-w-6xl mx-auto">
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
@@ -59,16 +53,20 @@ export default function Projects() {
 				</motion.div>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{projects.map((project, index) => (
-						<motion.div
+						<motion.a
+							href={project.github}
+							target="_blank"
+							rel="noopener noreferrer"
 							key={project.title}
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
+							whileHover={{ scale: 1.02 }}
 							transition={{
 								duration: 0.5,
 								delay: index * 0.2,
 							}}
 							viewport={{ once: true }}
-							className="group relative bg-surface rounded-lg overflow-hidden"
+							className="group relative bg-surface rounded-lg overflow-hidden cursor-pointer"
 						>
 							<div className="aspect-w-16 aspect-h-9 bg-gray-100 relative">
 								<Image
@@ -96,7 +94,7 @@ export default function Projects() {
 									))}
 								</div>
 							</div>
-						</motion.div>
+						</motion.a>
 					))}
 				</div>
 			</div>
