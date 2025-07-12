@@ -20,7 +20,6 @@ export default function Skills() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold text-primary mb-4">Skills</h2>
-          <p className="text-xl text-secondary">Technologies I work with</p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {Object.entries(skills).map(([category, items], categoryIndex) => (
