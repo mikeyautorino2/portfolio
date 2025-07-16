@@ -15,8 +15,8 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Your Name - Software Engineer',
-  description: 'Personal portfolio showcasing my projects and skills in software engineering',
+  title: 'Michele Autorino- Portfolio',
+  description: 'Personal portfolio',
 };
 
 export default function RootLayout({
