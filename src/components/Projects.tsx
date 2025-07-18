@@ -31,6 +31,13 @@ const projects = [
 		image: '/fraud-call-detection.jpg',
 		github: 'https://github.com/mikeyautorino2/DSclubprojclone'
 	},
+	{
+		title: 'Link Analyzer Webcrawler',
+		description: 'A modern web application that analyzes websites by extracting metadata, counting links and images, and providing valuable insights about web pages.',
+		tech: ['Node.js', 'Express.js', 'PostgreSQL', 'React', 'CSS3'],
+		image: '/fraud-call-detection.jpg',
+		github: 'https://github.com/mikeyautorino2/webcrawler'
+	},
 ];
 
 export default function Projects() {
