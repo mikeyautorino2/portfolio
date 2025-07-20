@@ -65,7 +65,7 @@ export default function Hero() {
             Contact Me
           </a>
           <a 
-            href="/michele_a_resume_S7_20_25.pdf"
+            href="/michele_a_resume_S7_20_25c.pdf"
             target="_blank"
             rel="noopener noreferrer" 
             className="bg-white text-black hover:text-white px-12 py-5 text-lg font-medium rounded-full hover:bg-primary transition-all duration-300 transform hover:scale-105 w-80 border-2 border-primary shadow-lg hover:shadow-xl"
