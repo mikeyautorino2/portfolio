@@ -15,6 +15,8 @@ const config: Config = {
         background: '#FFFFFF',  // Clean white background
         'accent-light': '#93C5FD', // Light blue for hover states
         'gray-light': '#F3F4F6', // Light gray for sections
+        surface: '#F9FAFB',    // Light gray surface for sections
+        border: '#E5E7EB',     // Border color
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],

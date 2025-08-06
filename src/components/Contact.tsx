@@ -4,7 +4,7 @@ import { FiMail, FiLinkedin, FiGithub } from 'react-icons/fi';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -13,7 +13,7 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="text-4xl font-bold text-primary mb-4">Contact</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Contact</h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <motion.a
               whileHover={{ scale: 1.05 }}
