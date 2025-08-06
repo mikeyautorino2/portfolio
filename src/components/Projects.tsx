@@ -13,7 +13,7 @@ interface Project {
 const projects: Project[] = [
 	{
 		title: 'Personal Portfolio Website',
-		description: 'A modern, responsive portfolio website showcasing my projects and skills with smooth animations and a clean design.',
+		description: 'A modern, responsive portfolio website showcasing my projects and skills with smooth animations and a clean design.                             ',
 		tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
 		github: 'https://github.com/mikeyautorino2/portfolio',
 	},

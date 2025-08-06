@@ -1,6 +1,6 @@
 'use client';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
 
 const scrollToSection = (sectionId: string) => {
   const element = document.getElementById(sectionId);
@@ -13,27 +13,46 @@ const scrollToSection = (sectionId: string) => {
 };
 
 // Floating particles component
-const FloatingParticle = ({ delay = 0, duration = 4 }: { delay?: number; duration?: number }) => (
-  <motion.div
-    className="absolute w-2 h-2 bg-accent/30 rounded-full"
-    initial={{ 
-      x: Math.random() * window.innerWidth,
-      y: window.innerHeight + 50,
-      opacity: 0 
-    }}
-    animate={{ 
-      y: -50,
-      opacity: [0, 1, 1, 0],
-      x: Math.random() * window.innerWidth 
-    }}
-    transition={{
-      duration,
-      delay,
-      repeat: Infinity,
-      ease: "linear"
-    }}
-  />
-);
+const FloatingParticle = ({ delay = 0, duration = 4 }: { delay?: number; duration?: number }) => {
+  const [windowSize, setWindowSize] = React.useState({ width: 0, height: 0 });
+
+  React.useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+      
+      const handleResize = () => {
+        setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+      };
+      
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
+
+  if (windowSize.width === 0) return null;
+
+  return (
+    <motion.div
+      className="absolute w-2 h-2 bg-accent/30 rounded-full"
+      initial={{ 
+        x: Math.random() * windowSize.width,
+        y: windowSize.height + 50,
+        opacity: 0 
+      }}
+      animate={{ 
+        y: -50,
+        opacity: [0, 1, 1, 0],
+        x: Math.random() * windowSize.width 
+      }}
+      transition={{
+        duration,
+        delay,
+        repeat: Infinity,
+        ease: "linear"
+      }}
+    />
+  );
+};
 
 
 export default function Hero() {
