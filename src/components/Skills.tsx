@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const skills = {
   'Languages': ['JavaScript/TypeScript', 'Python','C++','Java'],
   'Frontend': ['React', 'Next.js', 'Tailwind CSS'],
-  'Backend': ['Node.js', 'Spring'],
+  'Backend/Databases': ['Node.js', 'Express.js', 'PostgreSQL'],
   'Tools': ['Git', 'Docker','Scikit-learn','NLTK','Pandas','NumPy'],
 };
 

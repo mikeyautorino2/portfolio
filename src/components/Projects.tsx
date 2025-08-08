@@ -19,7 +19,7 @@ const projects: Project[] = [
 	},
 	{
 		title: 'NBA Player Valuation Model',
-		description: 'Scraped NBA stats from multiple sources, evaluated player contributions using Lasso regression and clustering, and visualized insights with comprehensive data analysis.',
+		description: 'Developed a machine learning pipeline to predict NBA player value (VORP) using advanced feature engineering and Gradient Boosting, achieving a test R^2 of 0.90.',
 		tech: ['Python', 'BeautifulSoup', 'scikit-learn', 'matplotlib', 'seaborn'],
 		github: 'https://github.com/mikeyautorino2/NBAVORPMODEL',
 	},
@@ -30,9 +30,9 @@ const projects: Project[] = [
 		github: 'https://github.com/mikeyautorino2/DSclubprojclone',
 	},
 	{
-		title: 'Link Analyzer Webcrawler',
+		title: 'Link Analyzer',
 		description: 'A full-stack web application that analyzes websites by extracting metadata, counting links and images, and providing valuable insights about web pages.',
-		tech: ['Node.js', 'Express.js', 'PostgreSQL', 'React', 'CSS3'],
+		tech: ['Node.js', 'Express.js', 'Vercel','React', 'CSS3', 'PostgreSQL'],
 		github: 'https://github.com/mikeyautorino2/webcrawler',
 	},
 ];
