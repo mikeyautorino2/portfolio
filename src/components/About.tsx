@@ -17,7 +17,7 @@ export default function About() {
             <h2 className="text-4xl font-bold text-primary mb-6">About</h2>
             <div className="space-y-4 text-secondary text-lg">
               <p>
-                I&apos;m a studentstudying Computer Engineering & Statistics at UIUC, constantly learning how math and code can come together to solve real-world problems.
+                I&apos;m a student studying Computer Engineering & Statistics at UIUC, constantly learning how math and code can come together to solve real-world problems.
               </p>
               <p>
                 I&apos;ve built sentiment-analysis pipelines, explored 3D graphics research in Unreal Engine, and prototyped fraud-call detectors using NLP.
