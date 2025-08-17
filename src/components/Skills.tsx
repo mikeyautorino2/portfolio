@@ -5,7 +5,7 @@ const skills = {
   'Languages': ['JavaScript/TypeScript', 'Python','C++','Java'],
   'Frontend': ['React', 'Next.js', 'Tailwind CSS'],
   'Backend/Databases': ['Node.js', 'Express.js', 'PostgreSQL'],
-  'Tools': ['Git', 'Docker','Scikit-learn','NLTK','Pandas','NumPy'],
+  'Tools': ['PyTorch','Git', 'Docker','Scikit-learn','NLTK','Pandas','NumPy'],
 };
 
 export default function Skills() {

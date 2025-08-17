@@ -35,6 +35,12 @@ const projects: Project[] = [
 		tech: ['Node.js', 'Express.js', 'Vercel','React', 'CSS3', 'PostgreSQL'],
 		github: 'https://github.com/mikeyautorino2/webcrawler',
 	},
+	{
+		title: 'MRI Classification Model',
+		description: 'Built a deep learning pipeline in PyTorch for brain MRI classification and tumor segmentation, integrating 2D/3D CNNs with advanced loss functions. Added uncertainty estimation (MC Dropout) and explainability (Grad-CAM) to highlight suspicious regions. Achieved 89% classification accuracy and 90% segmentation accuracy on a dataset of 3,200+ MRIs using Python, NumPy, and scikit-learn for preprocessing and evaluation.',
+		tech: ['Python', 'PyTorch', 'pandas', 'NumPy'],
+		github: 'https://github.com/mikeyautorino2/MRIClassificationModel'
+	}
 ];
 
 export default function Projects() {
