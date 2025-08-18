@@ -16,13 +16,13 @@ const robotoMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: 'Michele Autorino - UIUC ECE & Stats Student | NLP & Backend Developer',
-  description: 'Computer Engineering and Statistics student at University of Illinois specializing in Natural Language Processing, Cloud Computing, and Backend Development. View my projects and experience.',
-  keywords: ['Michele Autorino', 'UIUC', 'Computer Engineering', 'Statistics', 'NLP', 'Backend Development', 'University of Illinois', 'Portfolio'],
+  description: 'Computer Engineering and Statistics student at University of Illinois',
+  keywords: ['Michele Autorino', 'UIUC', 'Computer Engineering', 'Statistics', 'Portfolio'],
   authors: [{ name: 'Michele Autorino' }],
   creator: 'Michele Autorino',
   openGraph: {
     title: 'Michele Autorino - UIUC ECE & Stats Student',
-    description: 'Computer Engineering and Statistics student specializing in NLP, Cloud Computing, and Backend Development',
+    description: 'Computer Engineering and Statistics student',
     type: 'website',
     locale: 'en_US',
     siteName: 'Michele Autorino Portfolio',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Michele Autorino - UIUC ECE & Stats Student',
-    description: 'Computer Engineering and Statistics student specializing in NLP, Cloud Computing, and Backend Development',
+    description: 'Computer Engineering and Statistics student',
   },
   robots: {
     index: true,
