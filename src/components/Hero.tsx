@@ -185,7 +185,7 @@ export default function Hero() {
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             className="text-gray-200"
           >
-            ECE & Stats @ Illinois | Interested in NLP, Cloud Computing, and Backend Development
+            ECE & Stats @ Illinois 
           </motion.span>
         </motion.p>
 
