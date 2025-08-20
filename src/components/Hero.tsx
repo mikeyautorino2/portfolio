@@ -240,7 +240,7 @@ export default function Hero() {
           </motion.a>
 
           <motion.a 
-            href="/rs8_17.pdf"
+            href="/rs8_18.pdf"
             target="_blank"
             rel="noopener noreferrer" 
             className="bg-gradient-to-r from-gray-800 to-gray-900 backdrop-blur-sm text-white px-12 py-5 text-lg font-medium rounded-full border-2 border-gray-600 hover:border-accent shadow-xl hover:shadow-2xl relative overflow-hidden group transition-all duration-500"

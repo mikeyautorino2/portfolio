@@ -15,7 +15,7 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Michele Autorino - UIUC ECE & Stats Student | NLP & Backend Developer',
+  title: 'Michele Autorino - UIUC ECE & Stats Student',
   description: 'Computer Engineering and Statistics student at University of Illinois',
   keywords: ['Michele Autorino', 'UIUC', 'Computer Engineering', 'Statistics', 'Portfolio'],
   authors: [{ name: 'Michele Autorino' }],
