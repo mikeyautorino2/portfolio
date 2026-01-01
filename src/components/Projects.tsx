@@ -4,113 +4,74 @@ import { motion } from 'framer-motion';
 interface Project {
   title: string;
   description: string;
-  tech: string[];
-  github: string;
-  demo?: string;
-
+  github?: string;
 }
 
 const projects: Project[] = [
-	{
-		title: 'Personal Portfolio Website',
-		description: 'A modern, responsive portfolio website showcasing my projects and skills with smooth animations and a clean design.                             ',
-		tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-		github: 'https://github.com/mikeyautorino2/portfolio',
-	},
-	{
-		title: 'NBA Player Valuation Model',
-		description: 'Developed a machine learning pipeline to predict NBA player value (VORP) using advanced feature engineering and Gradient Boosting, achieving a test R^2 of 0.90.',
-		tech: ['Python', 'BeautifulSoup', 'scikit-learn', 'matplotlib', 'seaborn'],
-		github: 'https://github.com/mikeyautorino2/NBAVORPMODEL',
-	},
-	{
-		title: 'Fraud Call Detection Model',
-		description: 'Used NLTK and bag-of-words to vectorize call transcripts and built a logistic regression pipeline with scikit-learn, achieving 89% accuracy in detecting fraud.',
-		tech: ['Python', 'NLTK', 'scikit-learn', 'pandas', 'NumPy'],
-		github: 'https://github.com/mikeyautorino2/DSclubprojclone',
-	},
-	{
-		title: 'Link Analyzer',
-		description: 'A full-stack web application that analyzes websites by extracting metadata, counting links and images, and providing valuable insights about web pages.',
-		tech: ['Node.js', 'Express.js', 'Vercel','React', 'CSS3', 'PostgreSQL'],
-		github: 'https://github.com/mikeyautorino2/webcrawler',
-	},
-	{
-		title: 'MRI Classification Model',
-		description: 'Built a deep learning pipeline in PyTorch for brain MRI classification and tumor segmentation, integrating 2D/3D CNNs with advanced loss functions. Added uncertainty estimation (MC Dropout) and explainability (Grad-CAM) to highlight suspicious regions. Achieved 89% classification accuracy and 90% segmentation accuracy on a dataset of 3,200+ MRIs using Python, NumPy, and scikit-learn for preprocessing and evaluation.',
-		tech: ['Python', 'PyTorch', 'pandas', 'NumPy'],
-		github: 'https://github.com/mikeyautorino2/MRIClassificationModel'
-	}
+  {
+    title: 'degenstock',
+    description: 'HackPrinceton project (30/180+ teams). AWS-hosted FastAPI service for prediction market analytics with FAISS embeddings, arbitrage detection, and React dashboards.',
+    github: 'https://github.com/mikeyautorino2/dghack',
+  },
+  {
+    title: 'MRI Classification Model',
+    description: 'PyTorch pipeline for brain MRI classification and tumor segmentation on 3,200+ images. 89% classification, 90% segmentation accuracy.',
+    github: 'https://github.com/mikeyautorino2/MRIClassificationModel',
+  },
+  {
+    title: 'NBA Player Valuation Model',
+    description: 'ML pipeline predicting player value (VORP) with Gradient Boosting, achieving R² of 0.90.',
+    github: 'https://github.com/mikeyautorino2/NBAVORPMODEL',
+  },
+  {
+    title: 'Fraud Call Detection',
+    description: 'NLP-based fraud detection using NLTK and logistic regression with 89% accuracy.',
+    github: 'https://github.com/mikeyautorino2/DSclubprojclone',
+  },
+  {
+    title: 'Link Analyzer',
+    description: 'Full-stack web app for extracting metadata and analyzing website structure.',
+    github: 'https://github.com/mikeyautorino2/webcrawler',
+  },
 ];
 
 export default function Projects() {
-	return (
-		<section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
-			<div className="max-w-6xl mx-auto">
-				<motion.div
-					initial={{ opacity: 0, y: 20 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8 }}
-					viewport={{ once: true }}
-					className="text-center mb-16"
-				>
-					<h2 className="text-4xl font-bold text-white mb-4">
-						Projects
-					</h2>
-				</motion.div>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					{projects.map((project, index) => (
-						<motion.div
-							key={project.title}
-							initial={{ opacity: 0, y: 20 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							whileHover={{ 
-								scale: 1.05, 
-								y: -8,
-							}}
-							transition={{
-								duration: 0.2,
-								delay: index * 0.09,
-							}}
-							viewport={{ once: true }}
-							className="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden
-							shadow-xl hover:shadow-2xl hover:shadow-accent/40 border border-gray-700
-							transition-all duration-300 cursor-pointer focus:outline-none focus:ring-4 focus:ring-accent/30"
-							onClick={() => window.open(project.github, '_blank')}
-							onKeyDown={(e) => {
-								if (e.key === 'Enter' || e.key === ' ') {
-									e.preventDefault();
-									window.open(project.github, '_blank');
-								}
-							}}
-							tabIndex={0}
-							role="button"
-							aria-label={`View ${project.title} on GitHub`}
-						>
-							<div className="p-6 transition-colors duration-300 group-hover:bg-gradient-to-br group-hover:from-gray-800 group-hover:to-black">
-								<h3 className="text-xl font-semibold text-white mb-3 transition-colors duration-300">
-									{project.title}
-								</h3>
-								<p className="text-gray-300 mb-4 transition-colors duration-300 leading-relaxed group-hover:text-white">
-									{project.description}
-								</p>
-								<div className="flex flex-wrap gap-2">
-									{project.tech.map((tech) => (
-										<span
-											key={tech}
-											className="text-sm px-3 py-1 bg-gradient-to-r from-gray-700 to-gray-600 text-gray-200 rounded-full
-											group-hover:from-accent group-hover:to-blue-600 group-hover:text-white
-											transition-all duration-300"
-										>
-											{tech}
-										</span>
-									))}
-								</div>
-							</div>
-						</motion.div>
-					))}
-				</div>
-			</div>
-		</section>
-	);
+  return (
+    <section id="projects" className="mb-16">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="text-lg font-semibold text-foreground mb-4">Projects</h2>
+
+        <ul className="space-y-4">
+          {projects.map((project, index) => (
+            <motion.li
+              key={project.title}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: index * 0.05 }}
+              viewport={{ once: true }}
+            >
+              {project.github ? (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline font-medium"
+                >
+                  {project.title}
+                </a>
+              ) : (
+                <span className="font-medium">{project.title}</span>
+              )}
+              <span className="text-muted"> — {project.description}</span>
+            </motion.li>
+          ))}
+        </ul>
+      </motion.div>
+    </section>
+  );
 }

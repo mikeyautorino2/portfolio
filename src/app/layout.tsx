@@ -15,22 +15,22 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Michele Autorino - UIUC ECE & Stats Student',
-  description: 'Computer Engineering and Statistics student at University of Illinois',
-  keywords: ['Michele Autorino', 'UIUC', 'Computer Engineering', 'Statistics', 'Portfolio'],
+  title: 'Michele Autorino - UIUC CS & Stats Student',
+  description: 'Computer Science and Statistics student at University of Illinois',
+  keywords: ['Michele Autorino', 'UIUC', 'Computer Science', 'Statistics', 'Portfolio'],
   authors: [{ name: 'Michele Autorino' }],
   creator: 'Michele Autorino',
   openGraph: {
-    title: 'Michele Autorino - UIUC ECE & Stats Student',
-    description: 'Computer Engineering and Statistics student',
+    title: 'Michele Autorino - UIUC CS & Stats Student',
+    description: 'Computer Science and Statistics student',
     type: 'website',
     locale: 'en_US',
     siteName: 'Michele Autorino Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Michele Autorino - UIUC ECE & Stats Student',
-    description: 'Computer Engineering and Statistics student',
+    title: 'Michele Autorino - UIUC CS & Stats Student',
+    description: 'Computer Science and Statistics student',
   },
   robots: {
     index: true,
@@ -45,9 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${robotoMono.variable} antialiased bg-background text-primary`}
-      >
+      <body className={`${inter.variable} ${robotoMono.variable} antialiased`}>
         {children}
       </body>
     </html>
