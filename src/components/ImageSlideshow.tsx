@@ -31,13 +31,13 @@ export default function ImageSlideshow() {
       <p className="text-muted text-sm mb-4">my current favorite pictures</p>
 
       <div className="relative aspect-[3/4] w-full overflow-hidden rounded-lg bg-foreground/5">
-        <AnimatePresence mode="wait">
+        <AnimatePresence initial={false}>
           <motion.div
             key={currentIndex}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1.2, ease: 'easeInOut' }}
             className="absolute inset-0"
           >
             <Image
