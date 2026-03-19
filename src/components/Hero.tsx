@@ -10,21 +10,21 @@ export default function Hero() {
         transition={{ duration: 0.5 }}
       >
         <h1 className="text-2xl font-semibold text-foreground mb-1">
-          Michele Autorino
+          michele autorino
         </h1>
-        <p className="text-muted mb-6">CS & Statistics @ UIUC</p>
+        <p className="text-muted mb-6">cs & statistics @ uiuc</p>
 
         <p className="text-foreground/90 mb-4">
-          Building things at the intersection of software and data. Currently researching prediction markets!
+          i like all things statistics and am currently looking into robotics
         </p>
 
         <p className="text-muted text-sm mb-4">
-          Outside of code: soccer, bjj, hiking, nature documentaries, rom-coms, meeting people
+          outside of school i enjoy: soccer, jiu-jitsu, hiking, nature documentaries, rom-coms, meeting people
         </p>
 
         <div className="flex gap-4 text-sm">
           <a
-            href="/michele_a_resume_1_1_26.pdf"
+            href="/res3_9.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="underline"
