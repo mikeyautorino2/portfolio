@@ -19,19 +19,9 @@ const projects: Project[] = [
     github: 'https://github.com/mikeyautorino2/MRIClassificationModel',
   },
   {
-    title: 'NBA Player Valuation Model',
-    description: 'ML pipeline predicting player value (VORP) with Gradient Boosting, achieving R² of 0.90.',
-    github: 'https://github.com/mikeyautorino2/NBAVORPMODEL',
-  },
-  {
-    title: 'Fraud Call Detection',
-    description: 'NLP-based fraud detection using NLTK and logistic regression with 89% accuracy.',
-    github: 'https://github.com/mikeyautorino2/DSclubprojclone',
-  },
-  {
-    title: 'Link Analyzer',
-    description: 'Full-stack web app for extracting metadata and analyzing website structure.',
-    github: 'https://github.com/mikeyautorino2/webcrawler',
+    title: 'SlopCop',
+    description: 'my friends and I used GeminiAPI to build an extenstion that blocks absolute slop from ever hitting your eyes on youtube',
+    github: 'https://devpost.com/software/slopcop-rjop32',
   },
 ];
 
