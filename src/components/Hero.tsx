@@ -15,7 +15,7 @@ export default function Hero() {
         <p className="text-muted mb-6">cs & statistics @ uiuc</p>
 
         <p className="text-foreground/90 mb-4">
-          i like all things statistics and am currently looking into robotics
+          i like all things statistics
         </p>
 
         <p className="text-muted text-sm mb-4">
