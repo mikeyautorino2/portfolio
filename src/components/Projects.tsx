@@ -15,7 +15,7 @@ const projects: Project[] = [
   },
   {
     title: 'Distributed Cache in Go',
-    description: 'System Programming Honors Section project where my friend and i are abusing go routines and the fake synchronization the language offers to distribute cache nodes acrosses multiple cpu cores and a raspberry pi',
+    description: 'System Programming Honors Section project where my friend and i are abusing goroutines and the fake synchronization the language offers to distribute cache nodes acrosses multiple cpu cores and a raspberry pi',
     github: 'https://github.com/ArnavSaraogi/341h-distributed-cache',
   },
   {
