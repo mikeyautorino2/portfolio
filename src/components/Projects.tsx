@@ -14,9 +14,9 @@ const projects: Project[] = [
     github: 'https://github.com/mikeyautorino2/dghack',
   },
   {
-    title: 'MRI Classification Model',
-    description: 'PyTorch pipeline for brain MRI classification and tumor segmentation on 3,200+ images. 89% classification, 90% segmentation accuracy.',
-    github: 'https://github.com/mikeyautorino2/MRIClassificationModel',
+    title: 'Distributed Cache in Go',
+    description: 'System Programming Honors Section project where my friend and i are abusing go routines and the fake synchronization the language offers to distribute cache nodes acrosses multiple cpu cores and a raspberry pi',
+    github: 'https://github.com/ArnavSaraogi/341h-distributed-cache',
   },
   {
     title: 'SlopCop',
