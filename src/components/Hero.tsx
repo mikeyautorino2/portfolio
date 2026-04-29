@@ -10,16 +10,16 @@ export default function Hero() {
         transition={{ duration: 0.5 }}
       >
         <h1 className="text-2xl font-semibold text-foreground mb-1">
-          michele autorino
+          Michele Autorino
         </h1>
-        <p className="text-muted mb-6">cs & statistics @ uiuc</p>
+        <p className="text-muted mb-6">Statistics & CS @ UIUC</p>
 
         <p className="text-foreground/90 mb-4">
-          i like all things statistics
+          
         </p>
 
         <p className="text-muted text-sm mb-4">
-          outside of school i enjoy: soccer, jiu-jitsu, hiking, nature documentaries, rom-coms, meeting people
+          Outside of school i enjoy: soccer, jiu-jitsu, hiking, nature documentaries, rom-coms, meeting people
         </p>
 
         <div className="flex gap-4 text-sm">
