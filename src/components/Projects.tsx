@@ -10,17 +10,17 @@ interface Project {
 const projects: Project[] = [
   {
     title: 'degenstock',
-    description: 'HackPrinceton project (30/180+ teams). AWS-hosted FastAPI service for prediction market analytics with FAISS embeddings, arbitrage detection, and React dashboards.',
+    description: 'HackPrinceton. AWS-hosted FastAPI service for prediction market analytics with FAISS embeddings, arbitrage detection, and React dashboards.',
     github: 'https://github.com/mikeyautorino2/dghack',
   },
   {
     title: 'Distributed Cache in Go',
-    description: 'System Programming Honors Section project where my friend and i are abusing goroutines and the fake synchronization the language offers to distribute cache nodes acrosses multiple cpu cores and a raspberry pi',
+    description: 'System Programming Honors Section project where my friend and i are abusing goroutines to distribute cache nodes acrosses multiple cpu cores and a raspberry pi',
     github: 'https://github.com/ArnavSaraogi/341h-distributed-cache',
   },
   {
     title: 'SlopCop',
-    description: 'my friends and I used GeminiAPI to build an extenstion that blocks absolute slop from ever hitting your eyes on youtube',
+    description: 'My friends and I used GeminiAPI to build an extenstion that blocks absolute slop from ever hitting your eyes on youtube',
     github: 'https://devpost.com/software/slopcop-rjop32',
   },
 ];
