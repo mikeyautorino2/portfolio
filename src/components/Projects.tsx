@@ -15,12 +15,12 @@ const projects: Project[] = [
   },
   {
     title: 'Distributed Cache in Go',
-    description: 'System Programming Honors Section project where my friend and i are abusing goroutines to distribute cache nodes acrosses multiple cpu cores and a raspberry pi',
+    description: 'System Programming Honors Section project where my friend and I are building a distributed caching system across multiple cpu cores and a raspberry pi',
     github: 'https://github.com/ArnavSaraogi/341h-distributed-cache',
   },
   {
     title: 'SlopCop',
-    description: 'My friends and I used GeminiAPI to build an extenstion that blocks absolute slop from ever hitting your eyes on youtube',
+    description: 'Used GeminiAPI to build an extenstion that blocks absolute slop from ever hitting your eyes on youtube',
     github: 'https://devpost.com/software/slopcop-rjop32',
   },
 ];
